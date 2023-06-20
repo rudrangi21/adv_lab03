@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<title>lab03</title>
+</head>
+
+
+<body>
+<form name="CalculatorScientific">
+<table align="center">
+<h1 style="text-align:center;color:#8B0000 ">Scientific Calculator</h1>
+	<tr>
+		<td colspan="4"> <input type="text" name="result" placeholder="" style="text-align:center; background:white; color:rgb(170, 18, 18)" > </td>
+	</tr>
+
+	<tr>
+		<td><button type="button" value="sin" onclick="sin()"> sin </button> </td>
+		<td><button type="button" value="cos" onclick="cos()"> cos</button> </td>
+		<td><button type="button" value="tan" onclick="tan()"> tan </button> </td>
+		<td colspan="1">
+		 <button type="button" value="C" class="clear" onclick="button_clear()"> Clear </button>
+	 </td>
+	</tr>
+
+	<tr>
+		<td><button type="button" value="x^2" onclick="square()"> x<sup>2 </button> </td>
+		<td><button type="button" value="sqrt2" onclick="squareRoot()"> &radic; </button> </td>
+		
+		<td><button type="button" value="/" onclick="number(value)"> / </button> </td>
+		<td><button type="button" value="+" onclick="number(value)"> + </button> </td>
+	</tr>
+
+	<tr>
+		<td><button type="button" value="1" onclick="number(value)"> 1 </button> </td>
+		<td><button type="button" value="2" onclick="number(value)"> 2 </button> </td>
+		<td><button type="button" value="3" onclick="number(value)"> 3 </button> </td>
+		<td rowspan="5"><button type="button" onclick="backSpace()" class="back"> <- </button> </td>
+	</tr>
+
+	<tr>
+		<td><button type="button" value="4" onclick="number(value)"> 4</button> </td>
+		<td><button type="button" value="5" onclick="number(value)"> 5 </button> </td>
+		<td><button type="button" value="6" onclick="number(value)"> 6 </button> </td>
+		
+	</tr>
+
+	<tr>
+		<td><button type="button" value="7" onclick="number(value)"> 7 </button> </td>
+		<td><button type="button" value="8" onclick="number(value)"> 8 </button> </td>
+		<td><button type="button" value="9" onclick="number(value)"> 9 </button> </td>
+		
+	</tr>
+
+	<tr>
+		
+		<td><button type="button" value="0" onclick="number(value)"> 0 </button> </td>
+		<td><button type="button" value="*" onclick="number(value)"> * </button> </td>
+		<td><button type="button" value="-" onclick="number(value)"> - </button> </td>
+		
+	</tr>
+
+	<tr>
+		<td colspan="3"> <button type="button" value="=" onclick="equalTo()" class="equal">=</button> </td>
+		
+	</tr>
+
+</table>
+</form>
+<script src="./cal.js"></script>
+</body>
+</html>
